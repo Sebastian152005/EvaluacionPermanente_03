@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(0,255,222);
+    background: linear-gradient(0deg, rgba(0,255,222,1) 0%, rgba(0,159,255,1) 100%); 
+}
+
+.sticky-header {
+    font-family: 'Roboto';
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: rgb(141,149,152);
+    background: radial-gradient(circle, rgba(141,149,152,1) 0%, rgba(0,0,0,1) 100%);
+    z-index: 1000;
+}
+
+.sticky-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 2000px; 
+    margin: 0 auto; 
+}
+
+.sticky-header .logo {
+    margin-right: 100px;
+}
+
+.sticky-header .logo img {
+    height: 50px; 
+}
+
+.sticky-header .navigation {
+    flex-grow: 1; 
+    padding-left: 20px; 
+    margin-right: 20px; 
+}
+
+.sticky-header .navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.sticky-header .navigation ul li {
+    display: inline-block;
+    margin-left: 30px; 
+    font-size: 15px;
+}
+
+.sticky-header .navigation ul li:first-child {
+    margin-left: 0;
+}
+
+.sticky-header .navigation ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.sticky-header .navigation ul li a:hover {
+    background-color: rgb(0, 138, 224);
+}
+
+.background-image {
+    position: relative;
+    background-image: url('../image/fondo02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.main-title {
+    font-family: 'Montserrat';
+    position: relative;
+    font-size: 50px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+.titulo1 {
+    font-family: 'Lato';
+    font-size: 20px;
+    padding: 20px 20px; 
+    max-width: 1200px;
+    margin: 0 auto 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.titulo1 h2, .titulo1 p {
+    margin: 10px 0; 
+}
+
+.tabla01 {
+    font-family: 'Lato';
+    text-align: center; 
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 60px 20px 60px; 
+    max-width: 1400px;
+    margin: 0 auto 60px; 
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(0,28,255,1) 100%);
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+.estilotabla {
+    width: 80%;
+    margin: 0 auto; 
+    border-collapse: collapse; 
+    max-width: 1200px;
+    color: white;
+}
+
+.estilotabla th, .estilotabla td {
+    border: 2px solid rgb(0, 69, 134); 
+    padding: 20px; 
+}
+
+.estilotabla td a {
+    text-decoration: none;
+    color: white;
+}
+
+.estilotabla th {
+    background-color: rgb(0, 69, 134); 
+}
+
+.estilotabla tr td:hover {
+    background-color: #0011ff; 
+}
+
+.suscripcion {
+    font-family: 'Lato';
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px; 
+    color: #000980;
+}
+
+.suscripcion form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.suscripcion .form-label {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.suscripcion .form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suscripcion input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+}
+
+.suscripcion button {
+    font-family: 'Lato';
+    background-color: #000980;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suscripcion button:hover {
+    background-color: #0d00bd;
+}
+
+.footer {
+    background: rgb(141,149,152);
+    background: radial-gradient(circle, rgba(141,149,152,1) 0%, rgba(0,0,0,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center; 
+    font-family: 'Lato';
+}
+
+.footer h3 {
+    margin-top: 10px;
+}
+
+.social-icons1 {
+    margin-top: 20px;
+}
+
+.social-icons1 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons1 ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons1 ul li:last-child {
+    margin-right: 0;
+}
+
+.social-icons1 ul li a {
+    text-decoration: none;
+    color: #d5f0f4;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons1 ul li a:hover {
+    color: #000000;
+}
+
+.footer small {
+    display: block;
+    margin-top: 20px;
+    color: white;
+}

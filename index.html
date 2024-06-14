@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo - Deporte</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="shortcut icon" href="favicon/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="image/logo.png" alt="Logo de Mundo Deporte"></a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="ejercicio01.html">Ejercicio 1</a></li>
+                    <li><a href="ejercicio02.html">Ejercicio 2</a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i> Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="background-image">
+        <h1 class="main-title">Mundo Deporte: Vive la Emoción de Cada Jugada</h1>
+    </div>
+    <main>
+        <section class="titulo1">
+            <h2>ENVÍANOS TUS DATOS</h2>
+            <p>Completa el formulario a continuación para enviarte un regalo especial. Estamos aquí para responder tus preguntas y asegurarnos de que <br><br>tu experiencia sea memorable.</p>
+        </section>
+        <section class="seccionformulario">
+            <div class="columnas">
+                <img src="image/form.jpg" alt="image de formulario de contacto">
+            </div>
+            <div class="columnas">
+                <form id="contactForm" action="#" method="post">
+                    <table>
+                        <tr>
+                            <td><label for="name">Nombres y Apellidos:</label></td>
+                            <td><input type="text" id="name" name="name" required style=" font-weight: bold;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Correo Electrónico:</label></td>
+                            <td><input type="email" id="email" name="email" required style="font-weight: bold;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Mensaje:</label></td>
+                            <td><textarea id="message" name="message" rows="4" required style="font-weight: bold;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center">
+                                <button type="submit">Enviar</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Mundo Deporte - Entretenimiento para todos</h3>
+        <p>Síguenos en nuestras redes sociales para estar al día con las últimas noticias.</p>
+        <div class="filas">
+            <div class="social-icons1">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <small>&copy; 2024 Evaluación Permanente 3. Todos los derechos reservados.</small>
+    </footer> 
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                setTimeout(function() {
+                    window.location.href = 'index.html';
+                }, 500);
+            });
+        });
+    </script>    
+
+</body>
+</html>
